@@ -14,8 +14,8 @@ module TabsOnRails
 
     included do
       extend        ClassMethods
-      helper        HelperMethods
-      helper_method :current_tab, :current_tab?
+      ::ActionController::Base.helper HelperMethods
+      ::ActionController::Base.helper_method :current_tab, :current_tab?
     end
 
     
@@ -103,7 +103,7 @@ module TabsOnRails
         options = args.extract_options!
         name, namespace = args
 
-        before_filter(options) do |controller|
+        before_action(options) do |controller|
           controller.send(:set_tab, name, namespace)
         end
       end

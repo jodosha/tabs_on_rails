@@ -24,16 +24,19 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<appraisal>, [">= 0"])
       s.add_development_dependency(%q<mocha>, [">= 0"])
       s.add_development_dependency(%q<yard>, [">= 0"])
+      s.add_development_dependency(%q<test-unit>, [">= 0"])
     else
       s.add_dependency(%q<rails>, [">= 3.0"])
       s.add_dependency(%q<appraisal>, [">= 0"])
       s.add_dependency(%q<mocha>, [">= 0"])
       s.add_dependency(%q<yard>, [">= 0"])
+      s.add_dependency(%q<test-unit>, [">= 0"])
     end
   else
     s.add_dependency(%q<rails>, [">= 3.0"])
     s.add_dependency(%q<appraisal>, [">= 0"])
     s.add_dependency(%q<mocha>, [">= 0"])
     s.add_dependency(%q<yard>, [">= 0"])
+    s.add_dependency(%q<test-unit>, [">= 0"])
   end
 end
